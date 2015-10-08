@@ -10,6 +10,18 @@ a {
 header {
     visibility: hidden
 }
+
+.browserupgrade {
+    margin:0;
+    padding: 1em;
+    background: #D9042B;
+    color: #F0EDBB
+}
+.browserupgrade a {
+    font-weight: 800;
+    text-decoration: underline
+}
+
 .about {
     position: fixed;
     top: 50%;
@@ -62,11 +74,10 @@ header {
     padding-right: 5px
 }
 .list-inline a {
-    padding: 5px;
+    padding: .5em;
 
     color: #011C26;
     font-size: 150%;
-    padding: 5px;
 
     border-radius: 50%;
 
