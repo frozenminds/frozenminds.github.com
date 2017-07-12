@@ -22,26 +22,11 @@ header {
     text-decoration: underline
 }
 
-.about {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-
-    max-width: 80%;
-    padding: 2em 4em;
-
-    font-weight: 400;
-    text-align: center;
-    text-transform: lowercase;
-
-    border-color: #6B0C22;
-    border-style: solid;
+.container {
+    border: 1px solid #6B0C22;
     border-width: 1px 0;
+
+    padding: 3em 0;
 
     -webkit-transition: border .6s linear;
     -moz-transition: border .6s linear;
@@ -49,36 +34,34 @@ header {
     -o-transition: border .6s linear;
     transition: border .6s linear
 }
-.about:hover {
+.container:hover {
     border-color: #D9042B
 }
-.about h2 {
-    font-family: "Roboto Mono", Monaco, Consolas, monospace;
-    font-weight: 400
+
+.about {
+  font-family: "Roboto Mono", Monaco, Consolas, monospace;
+  font-weight: 400
 }
-.about h4 {
-    display: none
+.about .p-nickname::before {
+  content: "(aka "
 }
-.website::before {
-    margin-left:.1em;
-    content: "@"
+.about .p-nickname::after {
+  content: ")"
 }
-.list-inline {
-    list-style: none;
-    margin-left: -5px;
-    padding-left: 0
+blockquote {
+  border-left: 0.3rem solid #011C26;
 }
-.list-inline>li {
-    display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px
+
+.center {
+  text-align: center
 }
-.list-inline a {
+
+.social {
+  font-size: 2rem;
+}
+.social a {
     padding: .5em;
-
     color: #011C26;
-    font-size: 150%;
-
     border-radius: 50%;
 
     -moz-transition: all .6s linear;
@@ -87,43 +70,44 @@ header {
     -webkit-transition: all .6s linear;
     transition: all .6s linear
 }
-.list-inline a:hover {
+.social a:hover {
     background: #D9042B;
     color: #F4CB89;
     border-radius: 50%
 }
-@font-face {
-    font-family: fontello;
-    font-style: normal;
-    font-weight: 400;
-    src: url(../font/fontello.eot?78473212#iefix) format(embedded-opentype), url(../font/fontello.woff?78473212) format(woff), url(../font/fontello.ttf?78473212) format(truetype), url(../font/fontello.svg?78473212#fontello) format(svg)
+
+[class^="socicon-"],
+[class*=" socicon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Socicon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-[class^="icon-"]:before, [class*=" icon-"]:before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-family: fontello;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 1em;
-    margin-left: .2em;
-    margin-right: .2em;
-    speak: none;
-    text-align: center;
-    text-decoration: inherit;
-    text-transform: none;
-    width: 1em
+
+.socicon-linkedin:before {
+  content: "\e04c";
 }
-.icon-github:before {
-    content: "\e800"
+.socicon-stackexchange:before {
+  content: "\e07a";
 }
-.icon-twitter:before {
-    content: "\e801"
+.socicon-stackoverflow:before {
+  content: "\e07b";
 }
-.icon-linkedin:before {
-    content: "\e802"
+.socicon-github:before {
+  content: "\e032";
 }
-.icon-stackexchange:before {
-    content: "\e803"
+.socicon-twitter:before {
+  content: "\e08d";
+}
+.socicon-instagram:before {
+  content: "\e044";
+}
+.socicon-500px:before {
+  content: "\e000";
 }
