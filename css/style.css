@@ -1,22 +1,26 @@
 body {
     background: #F0EDBB;
     color: #011C26;
-    font: 100% / 1.5 Roboto, "Helvetica Neue", sans-serif
+    font: 100% / 2 Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased
 }
+
 a {
     color: inherit;
     text-decoration: none
 }
+
 header {
     visibility: hidden
 }
 
 .browserupgrade {
-    margin:0;
+    margin: 0;
     padding: 1em;
     background: #D9042B;
     color: #F0EDBB
 }
+
 .browserupgrade a {
     font-weight: 800;
     text-decoration: underline
@@ -28,86 +32,65 @@ header {
 
     padding: 3em 0;
 
-    -webkit-transition: border .6s linear;
-    -moz-transition: border .6s linear;
-    -ms-transition: border .6s linear;
-    -o-transition: border .6s linear;
-    transition: border .6s linear
+    -webkit-transition: border .4s linear;
+    -moz-transition: border .4s linear;
+    -ms-transition: border .4s linear;
+    -o-transition: border .4s linear;
+    transition: border .4s linear
 }
+
 .container:hover {
     border-color: #D9042B
 }
 
 .about {
-  font-family: "Roboto Mono", Monaco, Consolas, monospace;
-  font-weight: 400
+    font-family: "Roboto Mono", Monaco, Consolas, monospace;
+    font-weight: 400
 }
+
 .about .p-nickname::before {
-  content: "(aka "
+    content: "(aka "
 }
+
 .about .p-nickname::after {
-  content: ")"
+    content: ")"
 }
+
 blockquote {
-  border-left: 0.3rem solid #011C26;
+    border-left: 0.3rem solid #011C26;
+    font-size: 2rem;
 }
 
 .center {
-  text-align: center
+    text-align: center
 }
 
-.social {
-  font-size: 2rem;
+
+ul.social-icons {
+    margin-top: 10px;
+    font-size: 2.5rem;
 }
-.social a {
+
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+
+.social-icons a {
     padding: .5em;
     color: #011C26;
     border-radius: 50%;
 
-    -moz-transition: all .6s linear;
-    -ms-transition: all .6s linear;
-    -o-transition: all .6s linear;
-    -webkit-transition: all .6s linear;
-    transition: all .6s linear
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear
 }
+
 .social a:hover {
-    background: #D9042B;
+    background: #e41f43;
     color: #F4CB89;
     border-radius: 50%
-}
-
-[class^="socicon-"],
-[class*=" socicon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'Socicon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.socicon-linkedin:before {
-  content: "\e04c";
-}
-.socicon-stackexchange:before {
-  content: "\e07a";
-}
-.socicon-stackoverflow:before {
-  content: "\e07b";
-}
-.socicon-github:before {
-  content: "\e032";
-}
-.socicon-twitter:before {
-  content: "\e08d";
-}
-.socicon-instagram:before {
-  content: "\e044";
-}
-.socicon-500px:before {
-  content: "\e000";
 }
